@@ -29,9 +29,12 @@ def authTrilium(key):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument( '-k', '--key', action = 'store', type = str)
-    parser.add_argument( '-f', '--filename', action = 'store', type = str)
-    parser.add_argument( '-p', '--parentNote', action = "store", type = str)
+    parser.add_argument( '-k', '--key', action = 'store', type = str, 
+        help="File containing the Trilium authentication key")
+    parser.add_argument( '-f', '--filename', action = 'store', type = str,
+        help="Filename of the json file containing the Libby notes")
+    parser.add_argument( '-p', '--parentNote', action = "store", type = str,
+        help="ParentNoteId within TriliumNext to send the new note")
 
     args = parser.parse_args( )
 
