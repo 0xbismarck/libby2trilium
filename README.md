@@ -1,5 +1,5 @@
 # libby2trilium
-Import your reading notes from Libby into TriliumNext
+Import your reading notes from [Libby](https://libbyapp.com) into TriliumNext.
 
 ## Installation
 
@@ -76,6 +76,8 @@ This is the value needed for the parentNoteId.
 
 ### Downloading the Libby Reading Notes
 For instruction on how to download the json file containing your Libby highlights and notes, visit the following Libby resource for instructions: https://help.libbyapp.com/en-us/6151.htm
+
+Note: This has only been developed against ebooks notes. Audiobook notes have not been tested with this tool.
 
 ## Shoutouts
 Special thanks to:
