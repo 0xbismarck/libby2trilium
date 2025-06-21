@@ -61,6 +61,8 @@ usage: libby2trilium.py [-h] [-k KEY] [-f FILENAME] [-p PARENTNOTE]
 
 options:
   -h, --help            show this help message and exit
+  -s SERVER, --server SERVER
+                        Location of Trilium Server
   -k KEY, --key KEY     File containing the Trilium authentication key
   -f FILENAME, --filename FILENAME
                         Filename of the json file containing the Libby notes
