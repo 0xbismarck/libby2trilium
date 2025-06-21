@@ -21,14 +21,16 @@ blanknote = """<h2>Plot</h2>
 
 
 
-def authTrilium(key):
-    server_url = 'http://localhost:37840'
+def authTrilium(key, server):
+    server_url = server
     ea = ETAPI(server_url, key)
     # print(ea.app_info())
     return ea
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument( '-s', '--server', action = 'store', type = str, default='http://localhost:37840',
+        help="Location of Trilium Server")
     parser.add_argument( '-k', '--key', action = 'store', type = str, 
         help="File containing the Trilium authentication key")
     parser.add_argument( '-f', '--filename', action = 'store', type = str,
@@ -41,7 +43,7 @@ if __name__ == "__main__":
     f = open(args.key, "r")
     lines = f.readlines()
     # print(lines[0])
-    ea = authTrilium(lines[0].strip())
+    ea = authTrilium(lines[0].strip(), args.server)
     # print (ea)
     rawdata = open(args.filename)
     data = json.loads(rawdata.read())
