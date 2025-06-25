@@ -24,7 +24,7 @@ pip install trilium_py
  ``` 
 
 ## API Tokens
-Authenticating to TriliumNext Notes requires an API token for each service. 
+Authenticating to Trilium Notes requires an API token for each service. 
 
 - Trilium Notes:
   - Click on the "Main menu"
@@ -83,7 +83,7 @@ Note: This has only been developed against ebooks notes. Audiobook notes have no
 
 ## Shoutouts
 Special thanks to:
-- [TriliumNext Notes](https://github.com/TriliumNext/Notes)
+- [Trilium Notes](https://github.com/TriliumNext/Trilium)
 - [Trilium-py](https://github.com/Nriver/trilium-py)
 
 These projects made Libby2trilium possibile.
